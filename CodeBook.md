@@ -38,5 +38,10 @@ TidyDataSet2.txt is the average of each variable for each activity and each subj
 
 The data transformations that occur are as follows:
 
-1. Test and Training data sets are combined
-2. 
+1. X_test.txt and X_training.txt data sets are combined into a single data set.
+2. Only data fields containing the substrings "mean(" or "std(" are extracted.
+3. The data field names are renamed in a format acceptable to the R language ('-' replaced with '_', and "()" is removed)
+4. y_test.txt and y_training.txt data is used to determine the activity code for each row in the X_test and X_training data, and is used along with the activity_labels.txt file to determine a human readable value for each respective activity.  This data is stored as a new column in the new data set.
+5. The respective subject_train.txt files for the X_test and X_training data was used to determine which subject code should be applied to each row in the new data set, and is stored as a new column.
+6. The new data set is saved as TidyDataSet1.txt at this time.  The new data set is then further processed such that the mean is calculated for each activity/subject pair.  This new data set is then saved as TidyDataSet2.txt.
+
