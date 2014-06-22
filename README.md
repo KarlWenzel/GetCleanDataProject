@@ -23,4 +23,4 @@ TidyDataSet1.txt combines data from the original study's test and training data 
 
 TidyDataSet2.txt is the average of each variable for each activity and each subject from TidyDataSet1.txt.  Each row is a distinct paring of activity and subject, and is labelled appropriately.
 
-Please view the local [Code Book](https://github.com/KarlWenzel/GetCleanDataProject/blob/master/CodeBook.md) to see more information pertaining to the details of the data contain herein.
+Please view the local [Code Book](https://github.com/KarlWenzel/GetCleanDataProject/blob/master/CodeBook.md) to see more information pertaining to the details of the data contained herein.
